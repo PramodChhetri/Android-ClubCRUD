@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClubActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClubName"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/tvClubName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ClubName"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubName"
+        app:layout_constraintStart_toStartOf="@+id/tvClubName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/etClubName"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClubAddress"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/tvClubAddress"
+        app:layout_constraintTop_toBottomOf="@+id/etClubName"
+        app:layout_constraintStart_toStartOf="@id/tvClubName"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ClubAddress"
+        android:id="@+id/etClubAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubAddress"
+        app:layout_constraintStart_toStartOf="@+id/etClubName"
+        android:layout_marginHorizontal="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClubType"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etClubAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvClubAddress"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tvClubType"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ClubType"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubType"
+        app:layout_constraintStart_toStartOf="@+id/tvClubType"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/etClubType"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClubEntryFees"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:id="@+id/tvClubFee"
+        app:layout_constraintStart_toStartOf="@+id/tvClubType"
+        app:layout_constraintTop_toBottomOf="@+id/etClubType"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ClubFees"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubFee"
+        android:id="@+id/etClubFee"
+        android:layout_marginHorizontal="12dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etClubFee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/black"
+        android:text="Save"
+        android:textStyle="bold"
+        android:id="@+id/btSave"
+        android:layout_marginTop="24dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
